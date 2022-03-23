@@ -6,8 +6,194 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="./assets/content/dist/bower_components/metrics-graphics/dist/metricsgraphics.css">
+    <!-- chartist -->
+    <link rel="stylesheet" href="./assets/content/dist/bower_components/chartist/dist/chartist.min.css">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="./assets/content/dist/bower_components/uikit/css/uikit.almost-flat.min.css" media="all">
+
+    <!-- flag icons -->
+    <link rel="stylesheet" href="./assets/content/dist/assets/icons/flags/flags.min.css" media="all">
+
+    <!-- style switcher -->
+    <link rel="stylesheet" href="./assets/content/dist/assets/css/style_switcher.min.css" media="all">
+
+    <!-- altair admin -->
+    <link rel="stylesheet" href="./assets/content/dist/assets/css/main.min.css" media="all">
+
+    <link rel="stylesheet" href="./assets/content/css/custom-03.css" media="all">
+
+    <!-- themes -->
+    <link rel="stylesheet" href="./assets/content/dist/assets/css/themes/themes_combined.min.css" media="all">
+
+   
+    
 </head>
-<body>
-  <app-root></app-root>
+<body class="disable_transitions sidebar_main_open sidebar_main_swipe">
+  <div id="page_content">
+
+
+
+<app-root></app-root>
+
+
+
+  </div>
+  <script>
+    WebFontConfig = {
+        google: {
+            families: [
+                'Source+Code+Pro:400,700:latin',
+                'Roboto:400,300,500,700,400italic:latin'
+            ]
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+
+<!-- common functions -->
+<script src="./assets/content/dist/assets/js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="./assets/content/dist/assets/js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="./assets/content/dist/assets/js/altair_admin_common.min.js"></script>
+
+<!-- datatables -->
+<script src="./assets/content/js/jquery.dataTables.min.js"></script>
+<!-- datatables buttons-->
+<!-- datatables custom integration -->
+<script src="./assets/content/dist/assets/js/custom/datatables/datatables.uikit.min.js"></script>
+
+<!-- datatables functions -->
+<script src="./assets/content/dist/assets/js/pages/plugins_datatables.min.js"></script>
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/dataTables.buttons.js"></script>
+<script src="./assets/content/dist/assets/js/custom/datatables/buttons.uikit.js"></script>
+<script src="./assets/content/dist/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="./assets/content/dist/bower_components/pdfmake/build/pdfmake.min.js"></script>
+<script src="./assets/content/dist/bower_components/pdfmake/build/vfs_fonts.js"></script>
+<script src="./assets/content/js/buttons.colVis.js"></script>
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/buttons.html5.js"></script>
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/buttons.print.js"></script>
+<!-- page specific plugins -->
+<!-- d3 -->
+
+
+
+
+<!-- peity (small charts) -->
+<script src="./assets/content/dist/bower_components/peity/jquery.peity.min.js"></script>
+<!-- easy-pie-chart (circular statistics) -->
+<script src="./assets/content/dist/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
+<!-- countUp -->
+<script src="./assets/content/dist/bower_components/countUp.js/dist/countUp.min.js"></script>
+
+<!-- CLNDR -->
+<script src="./assets/content/dist/bower_components/clndr/clndr.min.js"></script>
+
+<!--  dashbord functions -->
+<script src="./assets/content/dist/assets/js/pages/dashboard.min.js"></script>
+
+
+
+<!--  notifications functions -->
+<script src="./assets/content/dist/assets/js/pages/components_notifications.min.js"></script>
+
+
+
+<script>
+    $(function() {
+        if(isHighDensity()) {
+            $.getScript( "./assets/content/dist/assets/js/custom/dense.min.js", function(data) {
+                // enable hires images
+                altair_helpers.retina_images();
+            });
+        }
+        if(Modernizr.touch) {
+            // fastClick (touch devices)
+            FastClick.attach(document.body);
+        }
+    });
+    $window.load(function() {
+        // ie fixes
+        altair_helpers.ie_fix();
+    });
+</script>
+<!-- google web fonts -->
+<script>
+    WebFontConfig = {
+        google: {
+            families: [
+                'Source+Code+Pro:400,700:latin',
+                'Roboto:400,300,500,700,400italic:latin'
+            ]
+        }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+
+<!-- common functions -->
+<script src="./assets/content/dist/assets/js/common.min.js"></script>
+<!-- uikit functions -->
+<script src="./assets/content/dist/assets/js/uikit_custom.min.js"></script>
+<!-- altair common functions/helpers -->
+<script src="./assets/content/dist/assets/js/altair_admin_common.min.js"></script>
+
+<!-- page specific plugins -->
+<!-- datatables -->
+<script src="./assets/content/js/jquery.dataTables.min.js"></script>
+<!-- datatables buttons-->
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/dataTables.buttons.js"></script>
+<script src="./assets/content/dist/assets/js/custom/datatables/buttons.uikit.js"></script>
+<!-- datatables custom integration -->
+<script src="./assets/content/dist/assets/js/custom/datatables/datatables.uikit.min.js"></script>
+
+<!-- datatables functions -->
+<script src="./assets/content/dist/assets/js/pages/plugins_datatables.min.js"></script>
+<script src="./assets/content/dist/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="./assets/content/dist/bower_components/pdfmake/build/pdfmake.min.js"></script>
+<script src="./assets/content/dist/bower_components/pdfmake/build/vfs_fonts.js"></script>
+<script src="./assets/content/js/buttons.colVis.js"></script>
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/buttons.html5.js"></script>
+<script src="./assets/content/dist/bower_components/datatables-buttons/js/buttons.print.js"></script>
+
+
+
+<!--  notifications functions -->
+<script src="./assets/content/dist/assets/js/pages/components_notifications.min.js"></script>
+
+<!-- <script type="text/javascript">
+    var APP_URL = <?php echo json_encode(url('/')); ?>;
+</script> -->
+
+<script src="./assets/content/js/rails.min.js"></script>
+<script src="./assets/content/js/custom-01.js"></script>
+
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
