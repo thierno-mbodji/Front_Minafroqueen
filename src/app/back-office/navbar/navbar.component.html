@@ -1,34 +1,25 @@
-<header id="header_main">
-    <div class="header_main_content">
-        <nav class="uk-navbar">
-
-            <!-- main sidebar switch -->
-            <a href="#" id="sidebar_main_toggle" class="sSwitch sSwitch_left">
-                <span class="sSwitchIcon"></span>
-            </a>
-
-            <!-- secondary sidebar switch -->
-            <a href="#" id="sidebar_secondary_toggle" class="sSwitch sSwitch_right sidebar_secondary_check">
-                <span class="sSwitchIcon"></span>
-            </a>
-            <div class="uk-navbar-flip">
-                <ul class="uk-navbar-nav user_actions">
-
-
-                    <li data-uk-dropdown="{mode:'click',pos:'bottom-right'}" style="background-color: #F3F3F3">
-                        <a href="#" class="user_action_image">
-                            <span style="color: #000;"></span> &nbsp;
-                            <img class="md-user-image" src=".assets/content/images/user.jpg" alt=""/>
-                        </a>
-                        <div class="uk-dropdown uk-dropdown-small">
-                            <ul class="uk-nav js-uk-prevent">
-                                <li><a href="">Mon profil</a></li>
-
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar-nav-parent">
+  <div class="container-fluid" id="navbar-container-fuild" >
+    <a class="navbar-brand" href="#">
+      <img src="./assets/content/images/logos/minafro-admin-logo.png" alt="minafro-admin-logo" id="minafro-admin-logo">
+    </a>
+    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Page 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Page 2</a>
+        </li>
+      </ul>
     </div>
-</header>
+  </div>
+</nav>
