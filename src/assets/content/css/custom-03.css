@@ -1,8 +1,8 @@
-#sidebar_main .sidebar_main_header {
+/* #sidebar_main .sidebar_main_header {
     height: inherit;
     border-bottom: none;
     background: #38B9C2 !important;
-    /*background: none;*/
+    /*background: none;
 }
 #sidebar_main .sidebar_main_header .sidebar_logo {
     height: inherit;
@@ -61,11 +61,8 @@
 #sidebar_main .menu_section>ul>li ul li.act_item>a>.menu_icon>i {
     color: #fff;
 }
-/****************************************/
+
 .logo_custom{
-    /*height: 160px;*/
-    /*width: auto;*/
-    /*margin-left: 6px;*/
     padding: 20px 10px 10px;
 }
 .logo_custom_small{
@@ -109,3 +106,4 @@
 .img_thumb {
     width: 60px !important;
 }
+*/
